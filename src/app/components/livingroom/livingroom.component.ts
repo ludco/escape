@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MansionService } from '../mansion.service';
-import { Movie } from '../movie';
+import { MansionService } from '../../shared/mansion.service';
+import { Movie } from '../../shared/movie';
 
 @Component({
   selector: 'app-livingroom',

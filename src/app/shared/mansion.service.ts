@@ -20,7 +20,7 @@ export class MansionService {
 
   //Function random
   shuffle(array : Movie[]){
-    return array.sort();
+    return array.sort(function() { return Math.random() - .5 });
 }
 
 
