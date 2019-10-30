@@ -1,0 +1,48 @@
+import { Component, OnInit, ɵPlayState } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
+
+@Component({
+  selector: 'app-lp-animation',
+  templateUrl: './lp-animation.component.html',
+  styleUrls: ['./lp-animation.component.css'],
+  animations: [
+    trigger('changeTitleSize', [
+      state('initial', style({
+        width: '0px',
+        height: '0px'
+      })),
+      state('final', style({
+        width: '800px',
+        height: '800px'
+      })),
+      transition('initial=>final', animate('300ms')),
+      transition('final=>initial', animate('300ms'))
+    ]),
+  ]
+})
+export class LpAnimationComponent implements OnInit {
+
+  currentState ='initial';
+
+  hideButton:boolean = true;
+  audio = new Audio ('assets/sounds/Female_Scream_Horror-NeoPhyTe-138499973.mp3');
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  changeTitleSize() {
+    this.currentState = this.currentState === 'initial' ? 'final' : 'initial';
+    
+  }
+
+  hideButtonClicked(){
+    this.hideButton = false;
+    this.audio.play();
+    
+  }
+
+  
+}
+
