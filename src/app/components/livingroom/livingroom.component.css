@@ -1,0 +1,31 @@
+
+.myDVD{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    width : 1350px;
+    height: 600px ;
+    background : url("src/assets/backgrounds/dvdtheque.jpg") no-repeat;
+    background-size :cover;
+}
+.movies{
+    padding : 50px 10px;
+    text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.movie{
+    width: 80px;
+    position: relative;
+    z-index: 1;
+    
+}
+img{
+    border :solid transparent;
+    border-bottom-width: 2px;
+    border-left-width: 20px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-radius: 30px;
+}
