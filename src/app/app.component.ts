@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LpAnimationComponent } from './lp-animation/lp-animation.component';
+
 
 @Component({
   selector: 'app-root',
