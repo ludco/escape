@@ -1,6 +1,77 @@
 .container {
-    background-image: url('../../../assets/backgrounds/bathroom.jpg');
+    background-image: url('../../../assets/backgrounds/bathroom2.jpg');
     background-color: black;
     width: 100%;
     height: 100vh;
+}
+#a {
+    position: absolute;    
+    left: 937px;
+    top: 505px; 
+}
+#c {
+    position: absolute;    
+    left: 351px;
+    top: 591px;
+
+}
+#e {
+    position: absolute;    
+    left: 371px;
+    top: 102px;
+
+}
+#h {
+    position: absolute;    
+    left: 1146px;
+    top: 591px;
+
+}
+#k {
+    position: absolute;    
+    left: 52px;
+    top: 309px;
+
+}
+#l {
+    position: absolute;    
+    left: 1468px;
+    top: 88px;
+
+}
+#m {
+    position: absolute;    
+    left: 1176px;
+    top: 309px;
+
+}
+#o {
+    position: absolute;    
+    left: 413px;
+    top: 831px;
+
+}
+#p {
+    position: absolute;    
+    left: 1831px;
+    top: 145px;
+
+}
+#s {
+    position: absolute;    
+    left: 866px;
+    top: 389px;
+
+}
+#s1 {
+    position: absolute;    
+    left: 1490px;
+    top: 802px;
+
+}
+#y {
+    position: absolute;    
+    left: 1473px;
+    top: 292px;
+
 }
