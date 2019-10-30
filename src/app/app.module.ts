@@ -13,6 +13,8 @@ import { MatDialogModule } from '@angular/material';
 
 
 import { LivingroomplaceComponent } from './pages/livingroomplace/livingroomplace.component';
+import { ExitComponent } from './pages/exit/exit.component';
+import { LooseComponent } from './pages/loose/loose.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { LivingroomplaceComponent } from './pages/livingroomplace/livingroomplac
     LpAnimationComponent,
     LivingroomComponent,
     FrontDirective,
-    LivingroomplaceComponent
+    LivingroomplaceComponent,
+    ExitComponent,
+    LooseComponent
   ],
   imports: [
     BrowserModule,
