@@ -14,6 +14,7 @@ export class LivingroomplaceComponent implements OnInit {
   constructor(private dialog : MatDialog) { }
 
   ngOnInit() {
+    
   }
   openDvd() {
     const dialogConfig = new MatDialogConfig();

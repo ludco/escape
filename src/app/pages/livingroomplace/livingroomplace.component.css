@@ -7,8 +7,12 @@
     background-size :cover;
     
 }
-.button{
-    background-color: tomato;
-    width : 30px;
-    height: 30px;
+
+img{
+    width: auto;
+    position: absolute;
+    top: 488px;
+    left : 1568px;
+    opacity: 0.5;
+    cursor: pointer;
 }
