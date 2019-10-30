@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { AppComponent } from '../app.component';
+import { AppComponent } from '../../app.component';
 import { LpAnimationComponent } from '../lp-animation/lp-animation.component';
 
 @Component({

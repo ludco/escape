@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { LpAnimationComponent } from './lp-animation/lp-animation.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { LpAnimationComponent } from './components/lp-animation/lp-animation.component';
 
 
 @Component({
