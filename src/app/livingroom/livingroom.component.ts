@@ -11,6 +11,9 @@ export class LivingroomComponent implements OnInit {
 
   movies : Movie[] ;
   moviesToDisplay : Movie[] = [];
+  goodAnswer : Movie[];
+  moviesSelected : Movie []= [];
+  good : boolean ;
  
   
   constructor(private mansionService : MansionService) {}
@@ -26,14 +29,30 @@ export class LivingroomComponent implements OnInit {
                                 this.movies[23],
                                 this.movies[65],
                                 this.movies[25],
-                                this.movies[42],
+                                this.movies[43],
                                 this.movies[66],
-                                this.movies[29],
+                                this.movies[30],
                                 this.movies[33],
                                 this.movies[68],
                                 )
+      this.goodAnswer = [this.movies[66], this.movies[43], this.movies[66], this.movies[6]];
     });
     
   }
+  MovieChoose(movie : Movie){
+    this.moviesSelected.push(movie);
+      if(this.moviesSelected.length === 4){
+        for (let i=0; i<4; i++){
+          if(this.moviesSelected[i].id===this.goodAnswer[i].id){
+            this.good = true;
+          }
+          else{
+            this.good = false;
+            
+          }
+        }
+      }
+    }
+
 
 }

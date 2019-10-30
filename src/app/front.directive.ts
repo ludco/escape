@@ -14,7 +14,7 @@ export class FrontDirective implements OnInit{
 
   @HostListener('mouseenter') mouseEnterEvent (eventData : Event){
     this.myZindex = 9;
-    this.myColor = 'red';
+    this.myColor = '#1e223d';
   }
   @HostListener('mouseleave') mouseLeaveEvent (eventData : Event){
     this.myZindex = 1;
