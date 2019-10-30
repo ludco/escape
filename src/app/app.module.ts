@@ -11,6 +11,7 @@ import { MatDialogModule } from '@angular/material';
 import { LivingroomComponent } from './components/livingroom/livingroom.component';
 import { FrontDirective } from './shared/front.directive';
 import { LivingroomplaceComponent } from './pages/livingroomplace/livingroomplace.component';
+import { BedroomComponent } from './pages/bedroom/bedroom.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LivingroomplaceComponent } from './pages/livingroomplace/livingroomplac
     LpAnimationComponent,
     LivingroomComponent,
     FrontDirective,
-    LivingroomplaceComponent
+    LivingroomplaceComponent,
+    BedroomComponent
   ],
   imports: [
     BrowserModule,
