@@ -9,9 +9,29 @@
 }
 
 .messageEnd {
-    position: absolute;
-    top: 400px;
-    left : 1050px;
+    position: absolute ;
+    left: 740px;
+    top: 300px;
+    width: 500px;
     cursor: pointer;
-    width: 50 px;
+    opacity: 1;
+	
+ 
+}
+.messageEndNo {
+    position: absolute ;
+    left: 740px;
+    top: 300px;
+    width: 500px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    opacity: 0;
+}
+
+button{
+    position: absolute ;
+    left: 970px;
+    top: 1000px;
+    background-color: #a5865e;
+    border-radius: 8px;
 }

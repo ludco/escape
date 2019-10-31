@@ -1,0 +1,9 @@
+<div>
+    <img src = "/assets/enigme_mur.png" alt= "Enigme">
+    <form>
+         <input type="string" [(ngModel)]="res" [ngModelOptions]="{standalone: true}">
+         <button (click)= "matchString(res)">Envoyer</button>
+         <div *ngIf="responseTrue">Bravo.</div>
+        </form>
+        
+</div>

@@ -1,5 +1,6 @@
 import { Component, OnInit, ɵPlayState } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lp-animation',
@@ -29,7 +30,7 @@ export class LpAnimationComponent implements OnInit {
   song = new Audio ('assets/sounds/song.mp3');
   voice = new Audio ('assets/sounds/voice.mp3')
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -43,6 +44,7 @@ export class LpAnimationComponent implements OnInit {
     this.hideButton = false;
     this.audio.play();
     setTimeout( () => {
+      this.router.navigate(['/bathroomPage']);
       this.song.play();
       this.voice.play();
     }, 6000); 
