@@ -6,6 +6,7 @@ import { LivingroomplaceComponent } from './pages/livingroomplace/livingroomplac
 import { ExitComponent } from './pages/exit/exit.component';
 import { LooseComponent } from './pages/loose/loose.component';
 import { BedroomComponent } from './pages/bedroom/bedroom.component';
+import { KitchenComponent } from './kitchen/kitchen.component';
 
 
 
@@ -15,7 +16,7 @@ const routes: Routes = [
   //{path:'bathroom', component :BathroomPageComponent},
   {path:'bedroom', component : BedroomComponent},
   //{path:'hallway',component : HallwayComponent },
-  //{path:'kitchen', component : KitchenComponent},
+  {path:'kitchen', component : KitchenComponent},
   {path:'living', component : LivingroomplaceComponent},
   {path:'exit', component : ExitComponent},
   {path:'loose', component: LooseComponent}
