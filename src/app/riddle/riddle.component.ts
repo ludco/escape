@@ -8,16 +8,21 @@ import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material";
 })
 export class RiddleComponent implements OnInit {
 
-  reponse : string = "Les jumelles";
-  res : string = '';
+  res: string; 
+  reponseSubmited : string;
+  reponse: string = "jumelles"
+ 
 
   constructor() { }
 
   ngOnInit() {
   }
   
-
   matchString(){
-    this.res = this.reponse;
+    this.reponseSubmited = this.res;
+    if (this.reponseSubmited != this.reponse) {
+      
+    }
   }
+
 }

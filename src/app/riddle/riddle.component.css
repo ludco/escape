@@ -1,7 +1,7 @@
 /*.enigme{
     width: 1500px;
 }
-*/
+
 
 .riddle{
     position: absolute;
@@ -25,4 +25,12 @@
     position: absolute ;
     left: 740px;
     top: 300px;
+}
+*/
+.bravo{
+    position: absolute ;
+    left: 740px;
+    top: 230px;
+    z-index: 9;
+    cursor: pointer;
 }
