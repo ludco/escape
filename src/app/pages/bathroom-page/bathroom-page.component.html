@@ -1,14 +1,14 @@
 <div class="container">
-    <img src='../../../assets/objectPhotos/a.png' id="a">
-    <img src='../../../assets/objectPhotos/c.png' id="c">
-    <img src='../../../assets/objectPhotos/e.png' id="e">
-    <img src='../../../assets/objectPhotos/h.png' id="h">
-    <img src='../../../assets/objectPhotos/k.png' id="k">
-    <img src='../../../assets/objectPhotos/l.png' id="l">
-    <img src='../../../assets/objectPhotos/m.png' id="m">
-    <img src='../../../assets/objectPhotos/o.png' id="o">
-    <img src='../../../assets/objectPhotos/p.png' id="p">
-    <img src='../../../assets/objectPhotos/s.png' id="s">
-    <img src='../../../assets/objectPhotos/s1.png' id="s1">
-    <img src='../../../assets/objectPhotos/y.png' id="y">
+    <img *ngFor='let item of items' [src]="item.url" [id]="item.id" (click)='displayWord(item)'> 
+    <img *ngIf='display' src='../../../assets/instructions/inst_first.png' id='notice' (click)='displayNotice()'>
+    <div class="answer">
+        <img *ngIf="letterP" src="../assets/objectPhotos/p.png" class="displayResult">
+        <img *ngIf="letterS" src="../assets/objectPhotos/s.png" class="displayResult">
+        <img *ngIf="letterY" src="../assets/objectPhotos/y.png" class="displayResult">
+        <img *ngIf="letterC" src="../assets/objectPhotos/c.png" class="displayResult">
+        <img *ngIf="letterH" src="../assets/objectPhotos/h.png" class="displayResult">
+        <img *ngIf="letterO" src="../assets/objectPhotos/o.png" class="displayResult">
+        <img *ngIf="letterS1" src="../assets/objectPhotos/s1.png" class="displayResult">
+        <img *ngIf="letterE" src="../assets/objectPhotos/e.png" class="displayResult">
+    </div>
 </div>
