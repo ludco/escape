@@ -8,7 +8,10 @@
         <button (click)= "submitAnswerRebus()" type="submit" class="submitAnswer">ENVOYER</button>
     </div>
     <div *ngIf="goodAnswer === answerSubmited" class = "bravoRebus">
-        <button><img src="/assets/instructions/bravo_titre.png"/></button>
+        <a routerLink="living" [matDialogClose]><img src="/assets/instructions/bravo_titre.png" /></a>
+    </div>
+    <div *ngIf="blood" class="bloodDown">
+        <img src="../../assets/backgrounds/blood.png" >
     </div>
 </div>
 

@@ -7,6 +7,7 @@ import { ExitComponent } from './pages/exit/exit.component';
 import { LooseComponent } from './pages/loose/loose.component';
 import { KitchenComponent } from './kitchen/kitchen.component';
 import { BathroomPageComponent } from './pages/bathroom-page/bathroom-page.component';
+
 import { HallComponent } from './hall/hall.component';
 
 
