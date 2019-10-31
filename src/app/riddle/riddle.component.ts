@@ -8,7 +8,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material";
 })
 export class RiddleComponent implements OnInit {
 
-  reponse : string = "Les jumelles";
+  reponse : string = "jumelles";
   res : string = '';
 
   constructor() { }
@@ -19,5 +19,6 @@ export class RiddleComponent implements OnInit {
 
   matchString(){
     this.res = this.reponse;
+    
   }
 }
