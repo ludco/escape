@@ -40,3 +40,11 @@
     0%   {top:-2000px;}
     100% {top:0px;}
   }
+
+.killerSay{
+    position: absolute ;
+    left: 740px;
+    top: 300px;
+    font-size: 40px;
+    color: white;
+}
