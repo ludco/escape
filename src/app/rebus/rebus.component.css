@@ -11,11 +11,17 @@
 }
 
 #answer{
-    width: 110px;
+    width: 120px;
     height: 25px;
     margin: 5px;
 }
 
 .submitAnswer{
     height: 25px;
+}
+
+.bravoRebus{
+    position: absolute ;
+    left: 740px;
+    top: 300px;
 }
