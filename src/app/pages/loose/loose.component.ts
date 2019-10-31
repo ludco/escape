@@ -12,4 +12,8 @@ export class LooseComponent implements OnInit {
   ngOnInit() {
   }
 
+  restart() {
+    
+  }
+  
 }
