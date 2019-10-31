@@ -16,6 +16,7 @@ images = BEDIMAGES;
   constructor() { }
 
   correctAnswer: BedroomImages [] = [];
+  wrongAnswer : BedroomImages[] = [];
   exitScreen = false;
 
   ngOnInit() { }
@@ -25,7 +26,6 @@ images = BEDIMAGES;
       this.correctAnswer.push(image)
       this.displayExit()
       console.log(this.correctAnswer)
-  
     }
   }
 
@@ -34,5 +34,19 @@ images = BEDIMAGES;
       this.exitScreen = true;
     }
   }
-  
+
+  loose (image: BedroomImages){
+    if(image.id === 'maryPainting' || image.id === 'paintingLeft'){
+      this.wrongAnswer.push(image)
+    }
+  }
+
+  playSound(){
+    if (this.correctAnswer.length === 1){
+      
+    }
+  }
+
 }
+
+
