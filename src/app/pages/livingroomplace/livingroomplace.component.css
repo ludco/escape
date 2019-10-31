@@ -8,11 +8,17 @@
     
 }
 
-img{
+.dvdtheque{
     width: auto;
     position: absolute;
     top: 488px;
     left : 1568px;
     opacity: 0.5;
     cursor: pointer;
+}
+.inst{
+    width: auto;
+    position: absolute;
+    top: 970px;
+    left : 100px;
 }
