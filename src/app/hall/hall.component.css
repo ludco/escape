@@ -21,3 +21,9 @@
 .no-padding .mat-dialog-container {
   padding: 0;
 }
+.inst{
+  position: absolute;
+  top: 970px;
+  left : 100px;
+  cursor: pointer;
+}

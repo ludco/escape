@@ -19,7 +19,6 @@ export class HallComponent implements OnInit {
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
     dialogConfig.hasBackdrop = true;
-    dialogConfig.panelClass = 'no-padding';
     this.dialog.open(RiddleComponent, dialogConfig);
    }
    
