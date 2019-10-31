@@ -1,13 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HallComponent } from './hall/hall.component';
 import { RiddleComponent } from './riddle/riddle.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { BathroomPageComponent } from './pages/bathroom-page/bathroom-page.component';
 import { LivingroomComponent } from './components/livingroom/livingroom.component';
@@ -18,6 +16,7 @@ import { MatDialogModule } from '@angular/material';
 import { KitchenComponent } from './kitchen/kitchen.component';
 import { RebusComponent } from './rebus/rebus.component';
 import { LivingroomplaceComponent } from './pages/livingroomplace/livingroomplace.component';
+import { BedroomComponent } from './pages/bedroom/bedroom.component';
 import { ExitComponent } from './pages/exit/exit.component';
 
 
@@ -32,13 +31,14 @@ import { ExitComponent } from './pages/exit/exit.component';
     LivingroomComponent,
     FrontDirective,
     LivingroomplaceComponent,
+    BedroomComponent,
     ExitComponent,
     KitchenComponent,
     RebusComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     MatDialogModule,
     BrowserAnimationsModule,
     FormsModule

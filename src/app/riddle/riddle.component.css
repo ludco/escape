@@ -1,0 +1,28 @@
+/*.enigme{
+    width: 1500px;
+}
+*/
+
+.riddle{
+    position: absolute;
+    top: 820px;
+    left: 1200px;
+    font-size: 20px;
+    color: white;
+}
+
+#res{
+    width: 120px;
+    height: 25px;
+    margin: 5px;
+}
+
+.riddleMatch{
+    height: 25px;
+}
+
+.bravoRiddle{
+    position: absolute ;
+    left: 740px;
+    top: 300px;
+}
