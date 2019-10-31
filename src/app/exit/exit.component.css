@@ -7,11 +7,3 @@
     background-attachment: fixed;
     background-size: cover;
 }
-
-.messageEnd {
-    position: absolute;
-    top: 400px;
-    left : 100px;
-    cursor: pointer;
-    width: 100 px;
-}
