@@ -1,0 +1,27 @@
+.rebusImg{
+    width: 1500px;
+}
+
+.inputRebus{
+    position: absolute;
+    top: 820px;
+    left: 1200px;
+    font-size: 20px;
+    color: white;
+}
+
+#answer{
+    width: 120px;
+    height: 25px;
+    margin: 5px;
+}
+
+.submitAnswer{
+    height: 25px;
+}
+
+.bravoRebus{
+    position: absolute ;
+    left: 740px;
+    top: 300px;
+}
