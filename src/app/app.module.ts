@@ -12,6 +12,9 @@ import { LivingroomComponent } from './components/livingroom/livingroom.componen
 import { FrontDirective } from './shared/front.directive';
 import { LivingroomplaceComponent } from './pages/livingroomplace/livingroomplace.component';
 import { BedroomComponent } from './pages/bedroom/bedroom.component';
+import { ExitComponent } from './pages/exit/exit.component';
+import { LooseComponent } from './pages/loose/loose.component';
+
 
 @NgModule({
   declarations: [
@@ -21,11 +24,13 @@ import { BedroomComponent } from './pages/bedroom/bedroom.component';
     LivingroomComponent,
     FrontDirective,
     LivingroomplaceComponent,
-    BedroomComponent
+    BedroomComponent,
+    ExitComponent,
+    LooseComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     MatDialogModule,
     BrowserAnimationsModule
   ],
