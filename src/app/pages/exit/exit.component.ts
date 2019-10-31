@@ -12,4 +12,8 @@ export class ExitComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  restart() {
+    
+  }
 }
