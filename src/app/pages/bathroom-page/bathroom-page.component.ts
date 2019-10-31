@@ -61,5 +61,8 @@ export class BathroomPageComponent implements OnInit {
       this.letterE) {
         this.good = true;
       }
+      else{
+        //Coller le code blood ici ! ;)
+      }
   }
 }
