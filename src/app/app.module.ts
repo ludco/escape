@@ -16,6 +16,7 @@ import { MatDialogModule } from '@angular/material';
 import { KitchenComponent } from './kitchen/kitchen.component';
 import { RebusComponent } from './rebus/rebus.component';
 import { LivingroomplaceComponent } from './pages/livingroomplace/livingroomplace.component';
+import { BedroomComponent } from './pages/bedroom/bedroom.component';
 import { ExitComponent } from './pages/exit/exit.component';
 import { LooseComponent } from './pages/loose/loose.component';
 
@@ -31,14 +32,15 @@ import { LooseComponent } from './pages/loose/loose.component';
     LivingroomComponent,
     FrontDirective,
     LivingroomplaceComponent,
+    BedroomComponent,
     ExitComponent,
     LooseComponent,
     KitchenComponent,
     RebusComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     MatDialogModule,
     BrowserAnimationsModule,
     FormsModule

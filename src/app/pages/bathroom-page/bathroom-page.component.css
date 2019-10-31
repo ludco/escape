@@ -94,3 +94,10 @@ img {
     top: 292px;
 
 }
+.bravo{
+    position: absolute ;
+    left: 740px;
+    top: 300px;
+    z-index: 9;
+    cursor: pointer;
+}
