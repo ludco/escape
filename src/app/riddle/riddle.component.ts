@@ -11,7 +11,7 @@ export class RiddleComponent implements OnInit {
   res: string; 
   reponseSubmited : string;
   reponse: string = "jumelles"
-  blood: boolean = false;
+ 
 
   constructor() { }
 
@@ -21,7 +21,7 @@ export class RiddleComponent implements OnInit {
   matchString(){
     this.reponseSubmited = this.res;
     if (this.reponseSubmited != this.reponse) {
-      this.blood=true;
+      
     }
   }
 
