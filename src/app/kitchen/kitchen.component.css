@@ -14,4 +14,8 @@
     opacity: 0.3;
     cursor: pointer;
 }
-
+.instructions{
+    position: absolute;
+    top: 970px;
+    left : 100px;
+}
