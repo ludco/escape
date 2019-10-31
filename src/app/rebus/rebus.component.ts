@@ -11,6 +11,7 @@ export class RebusComponent implements OnInit {
   answer: string; 
   answerSubmited : string;
   goodAnswer: string = "Paranormal Activity"
+  blood: boolean = false;
 
 
   constructor() { }
@@ -21,5 +22,9 @@ export class RebusComponent implements OnInit {
 
   submitAnswerRebus(){
     this.answerSubmited = this.answer;
+    if (this.answerSubmited != this.goodAnswer) {
+      this.blood=true;
+    }
   }
+
 }

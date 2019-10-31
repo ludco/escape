@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExitComponent implements OnInit {
 
+  isItTime : boolean = true;
+
   constructor() { }
 
   ngOnInit() {
-  }
+    setTimeout( () => {
+      this.isItTime=false;
+    }, 5000); 
 
+  }
+  
+
+  restart() {
+    
+  }
 }

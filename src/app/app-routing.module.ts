@@ -7,15 +7,18 @@ import { ExitComponent } from './pages/exit/exit.component';
 import { LooseComponent } from './pages/loose/loose.component';
 import { BedroomComponent } from './pages/bedroom/bedroom.component';
 import { KitchenComponent } from './kitchen/kitchen.component';
+import { BathroomPageComponent } from './pages/bathroom-page/bathroom-page.component';
+
+import { HallComponent } from './hall/hall.component';
 
 
 
 
 const routes: Routes = [
   {path:'', component : LandingPageComponent},
-  //{path:'bathroom', component :BathroomPageComponent},
+  {path:'bathroomPage', component :BathroomPageComponent},
   {path:'bedroom', component : BedroomComponent},
-  //{path:'hallway',component : HallwayComponent },
+  {path:'hall',component : HallComponent },
   {path:'kitchen', component : KitchenComponent},
   {path:'living', component : LivingroomplaceComponent},
   {path:'exit', component : ExitComponent},

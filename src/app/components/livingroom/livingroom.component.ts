@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MansionService } from '../../shared/mansion.service';
 import { Movie } from '../../shared/movie';
+import { Router } from '@angular/router';
+import {MatDialog, MatDialogConfig} from "@angular/material";
 
 @Component({
   selector: 'app-livingroom',
@@ -13,10 +15,11 @@ export class LivingroomComponent implements OnInit {
   moviesToDisplay : Movie[] = [];
   goodAnswer : Movie[];
   moviesSelected : Movie []= [];
-  good : boolean ;
+  good : boolean =false ;
+  matDialog : MatDialog;
  
   
-  constructor(private mansionService : MansionService) {}
+  constructor(private mansionService : MansionService, private router:Router) {}
   
   ngOnInit() {
     this.mansionService.getMovies().subscribe((data)=>{
@@ -45,14 +48,17 @@ export class LivingroomComponent implements OnInit {
         for (let i=0; i<4; i++){
           if(this.moviesSelected[i].id===this.goodAnswer[i].id){
             this.good = true;
+            this.matDialog.closeAll() 
+
           }
           else{
-            this.good = false;
+            this.matDialog.closeAll() 
             
           }
         }
       }
     }
 
+  
 
 }

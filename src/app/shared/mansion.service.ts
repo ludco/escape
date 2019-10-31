@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Movie } from './movie';
 import { Items } from './item-mock';
 import { Item } from './item';
+import { Router } from '@angular/router';
 
 
 @Injectable({
@@ -27,7 +28,10 @@ export class MansionService {
 
   
   
-  constructor(private http : HttpClient) { }
+  constructor(
+    private http : HttpClient,
+    private router: Router
+    ) { }
 
   getMovies():Observable<any>{
     return this.http.get<any>(`${this.baseUrl}/movies`);
@@ -58,7 +62,6 @@ export class MansionService {
     }
     else if (item.id === 'c' && this.letterC === false) {
       this.letterC = true;
-      console.log(this.letterC);
       return this.letterC;
     }
     else if (item.id === 'h' && this.letterH === false) {
@@ -77,6 +80,7 @@ export class MansionService {
       this.letterE = true;
       return this.letterE;
     }
+    this.router.navigate(['/loose']);
   }
 
 

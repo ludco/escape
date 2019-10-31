@@ -1,0 +1,13 @@
+<div>
+    <div class ="riddle">
+    <img src = "/assets/enigme_mur.png" class= "enigme">
+         <input type="text" [(ngModel)]="res" id="res" name="res" size="18"">
+         <button (click)= "matchString()" type="submit" class="riddleMatch">Envoyer</button>
+         <div *ngIf="reponse === res" class = "bravoRiddle">
+                <button><img src="/assets/instructions/bravo_titre.png"/></button>
+            </div>
+
+    </div>
+        
+</div>
+

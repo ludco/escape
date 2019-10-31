@@ -25,3 +25,18 @@
     left: 740px;
     top: 300px;
 }
+
+.bloodDown{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+  @keyframes example {
+    0%   {top:-2000px;}
+    100% {top:0px;}
+  }

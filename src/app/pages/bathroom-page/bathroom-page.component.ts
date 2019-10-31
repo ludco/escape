@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { MansionService } from 'src/app/shared/mansion.service';
 import { Item } from '../../shared/item';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bathroom-page',
@@ -20,9 +21,12 @@ export class BathroomPageComponent implements OnInit {
   letterO: boolean = false;
   letterS1: boolean = false;
   letterE: boolean = false;
+  good : boolean = false;
   
 
-  constructor(public mansionService: MansionService) { }
+  constructor(
+    public mansionService: MansionService,
+    private router : Router) { }
 
   ngOnInit() {
     this.getItems();
@@ -44,6 +48,18 @@ export class BathroomPageComponent implements OnInit {
     this.letterO = this.mansionService.letterO;
     this.letterS1 = this.mansionService.letterS1;
     this.letterE = this.mansionService.letterE;
-    console.log(this.letterC)
+    this.success();
+  }
+  success() {
+    if (this.letterP &&
+      this.letterS &&
+      this.letterY &&
+      this.letterC &&
+      this.letterH &&
+      this.letterO &&
+      this.letterS1 &&
+      this.letterE) {
+        this.good = true;
+      }
   }
 }
