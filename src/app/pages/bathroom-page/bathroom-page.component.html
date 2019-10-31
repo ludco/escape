@@ -14,4 +14,9 @@
     <div *ngIf="good === true" class = "bravo">
         <a routerLink="bedroom"><img src="/assets/instructions/bravo_titre.png" ></a>
     </div>
+    <div *ngIf="blood" class="bloodDown">
+        <img src="../../assets/backgrounds/blood.png" >
+        <img class="killerSay" src="../../assets/backgrounds/perdu.png" >
+        <button class="replayButton" (click)="replay()">Rejouer</button>
+    </div>
 </div>

@@ -33,7 +33,7 @@
     top: 0px;
 
     animation-name: example;
-    animation-duration: 10s;
+    animation-duration: 6s;
 }
 
   @keyframes example {
@@ -43,8 +43,16 @@
 
 .killerSay{
     position: absolute ;
-    left: 740px;
-    top: 300px;
-    font-size: 40px;
-    color: white;
+    left: 500px;
+    top: 350px;
+    width: 50%;
+}
+
+.replayButton{
+    position: absolute ;
+    left: 970px;
+    top: 1000px;
+    background-color: #a5865e;
+    border-radius: 8px;
+    cursor: pointer;
 }

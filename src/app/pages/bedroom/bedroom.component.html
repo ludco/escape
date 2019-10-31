@@ -4,6 +4,11 @@
     <img src="/assets/instructions/inst_bedroom.png" id = "instructions">    
 </div>
 
-
 <div *ngIf = "exitScreen === true" id="exitScreen">
+</div>
+
+<div *ngIf="blood" class="bloodDown">
+    <img src="../../assets/backgrounds/blood.png" >
+    <img class="killerSay" src="../../assets/backgrounds/perdu.png" >
+    <button class="replayButton" [matDialogClose] (click)="replay()">Rejouer</button>
 </div>

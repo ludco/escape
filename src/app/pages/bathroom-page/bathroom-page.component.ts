@@ -22,7 +22,7 @@ export class BathroomPageComponent implements OnInit {
   letterS1: boolean = false;
   letterE: boolean = false;
   good : boolean = false;
-  
+  blood: boolean = false;
 
   constructor(
     public mansionService: MansionService,
@@ -62,7 +62,11 @@ export class BathroomPageComponent implements OnInit {
         this.good = true;
       }
       else{
-        //Coller le code blood ici ! ;)
+        this.blood=true; 
       }
   }
+  replay(){
+    this.router.navigate(["/"]);
+  }
+  
 }

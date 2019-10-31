@@ -12,7 +12,8 @@
     </div>
     <div *ngIf="blood" class="bloodDown">
         <img src="../../assets/backgrounds/blood.png" >
-        <h1 class = killerSay>tu as perdu, je te tue...</h1>
+        <img class="killerSay" src="../../assets/backgrounds/perdu.png" >
+        <button class="replayButton" [matDialogClose] (click)="replay()">Rejouer</button>
     </div>
 </div>
 

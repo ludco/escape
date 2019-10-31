@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material";
+import { Router } from '@angular/router';
+import { MatDialogConfig} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-rebus',
@@ -12,9 +13,10 @@ export class RebusComponent implements OnInit {
   answerSubmited : string;
   goodAnswer: string = "Paranormal Activity"
   blood: boolean = false;
+  
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
    
@@ -23,8 +25,11 @@ export class RebusComponent implements OnInit {
   submitAnswerRebus(){
     this.answerSubmited = this.answer;
     if (this.answerSubmited != this.goodAnswer) {
-      this.blood=true;
+      this.blood=true; 
     }
+  }
+  replay(){
+    this.router.navigate(["/"]);
   }
 
 }
