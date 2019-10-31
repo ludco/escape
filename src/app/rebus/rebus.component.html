@@ -1,0 +1,12 @@
+<div>
+    <div class="rebus">
+        <img src="/assets/backgrounds/rebus.jpg"class="rebusImg">
+    </div>
+    <div class = "inputRebus">
+        <div *ngIf="goodAnswer === answerSubmited">Bravo, tu as bien trouvé Paranormal Activity</div>
+        <label>TITRE DU FILM :</label>
+        <input [(ngModel)]="answer" type="text" id="answer" name="answer" size="18" >
+        <button (click)= "submitAnswerRebus()" type="submit" class="submitAnswer">ENVOYER</button>
+    </div>
+</div>
+
