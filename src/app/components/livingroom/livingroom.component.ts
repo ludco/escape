@@ -38,7 +38,7 @@ export class LivingroomComponent implements OnInit {
                                 this.movies[33],
                                 this.movies[68],
                                 )
-      this.goodAnswer = [this.movies[66], this.movies[43], this.movies[66], this.movies[6]];
+      this.goodAnswer = [this.movies[66], this.movies[43], this.movies[65], this.movies[5]];
     });
     
   }
@@ -47,11 +47,16 @@ export class LivingroomComponent implements OnInit {
       if(this.moviesSelected.length === 4){
         for (let i=0; i<4; i++){
           if(this.moviesSelected[i].id===this.goodAnswer[i].id){
+            
             this.good = true;
-             
+            this.blood = false;
+            console.log(this.moviesSelected)
+            console.log(this.goodAnswer)
+
 
           }
           else{      
+            this.good =false;
             this.blood=true; 
           }
         }
