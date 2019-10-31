@@ -27,8 +27,12 @@
     margin: auto;
     padding : 50px 10px;
 }
+.moviech{
+    padding-left: 200px;
+}
 .choice img{
     width: 60px;
+
 }
 img{
     border :solid transparent;

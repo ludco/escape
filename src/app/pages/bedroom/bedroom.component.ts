@@ -29,6 +29,7 @@ images = BEDIMAGES;
       this.displayExit()
       this.loose(image)
       console.log(this.correctAnswer)
+      
     }
   }
 
