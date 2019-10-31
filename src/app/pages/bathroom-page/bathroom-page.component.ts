@@ -23,6 +23,7 @@ export class BathroomPageComponent implements OnInit {
   letterE: boolean = false;
   good : boolean = false;
   blood: boolean = false;
+  
 
   constructor(
     public mansionService: MansionService,
@@ -48,6 +49,7 @@ export class BathroomPageComponent implements OnInit {
     this.letterO = this.mansionService.letterO;
     this.letterS1 = this.mansionService.letterS1;
     this.letterE = this.mansionService.letterE;
+    this.blood = this.mansionService.blood;
     this.success();
   }
   success() {
@@ -60,9 +62,6 @@ export class BathroomPageComponent implements OnInit {
       this.letterS1 &&
       this.letterE) {
         this.good = true;
-      }
-      else{
-        this.blood=true; 
       }
   }
   replay(){

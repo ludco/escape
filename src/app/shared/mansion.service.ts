@@ -24,7 +24,7 @@ export class MansionService {
   letterO: boolean = false;
   letterS1: boolean = false;
   letterE: boolean = false;
-  
+  blood: boolean = false;
 
   
   
@@ -80,7 +80,9 @@ export class MansionService {
       this.letterE = true;
       return this.letterE;
     }
-    this.router.navigate(['/loose']);
+    else{
+      this.blood=true; 
+    }
   }
 
 
