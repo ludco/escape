@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material";
 
 @Component({
@@ -11,9 +12,10 @@ export class RiddleComponent implements OnInit {
   res: string; 
   reponseSubmited : string;
   reponse: string = "jumelles"
+  blood: boolean = false;
  
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -21,8 +23,11 @@ export class RiddleComponent implements OnInit {
   matchString(){
     this.reponseSubmited = this.res;
     if (this.reponseSubmited != this.reponse) {
-      
+      this.blood=true;      
     }
+  }
+  replay(){
+    this.router.navigate(["/"]);
   }
 
 }

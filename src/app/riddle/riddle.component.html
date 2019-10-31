@@ -9,6 +9,11 @@
     <div *ngIf="reponseSubmited === reponse" class = "bravo">
             <a routerLink="kitchen" [matDialogClose]><img src="/assets/instructions/bravo_shini.png" /></a>
     </div>
+    <div *ngIf="blood" class="bloodDown">
+        <img src="../../assets/backgrounds/blood.png" >
+        <img class="killerSay" src="../../assets/backgrounds/perdu.png" >
+        <button class="replayButton" [matDialogClose] (click)="replay()">Rejouer</button>
+    </div>
 </div>
 
 

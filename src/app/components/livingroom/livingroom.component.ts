@@ -15,6 +15,7 @@ export class LivingroomComponent implements OnInit {
   goodAnswer : Movie[];
   moviesSelected : Movie []= [];
   good : boolean =false ;
+  blood: boolean = false;
 
  
   
@@ -50,13 +51,15 @@ export class LivingroomComponent implements OnInit {
              
 
           }
-          else{
-             
-            
+          else{      
+            this.blood=true; 
           }
         }
       }
      
+    }
+    replay(){
+      this.router.navigate(["/"]);
     }
 
   
