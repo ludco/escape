@@ -5,12 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HallComponent } from './hall/hall.component';
 import { RiddleComponent } from './riddle/riddle.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BathroomPageComponent } from './pages/bathroom-page/bathroom-page.component';
 import { LivingroomComponent } from './components/livingroom/livingroom.component';
 import { FrontDirective } from './shared/front.directive';

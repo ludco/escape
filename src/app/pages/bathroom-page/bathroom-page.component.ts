@@ -21,6 +21,7 @@ export class BathroomPageComponent implements OnInit {
   letterO: boolean = false;
   letterS1: boolean = false;
   letterE: boolean = false;
+  good : boolean = false;
   
 
   constructor(
@@ -58,7 +59,7 @@ export class BathroomPageComponent implements OnInit {
       this.letterO &&
       this.letterS1 &&
       this.letterE) {
-        this.router.navigate(['/kitchen']);
+        this.good = true;
       }
   }
 }
