@@ -26,6 +26,8 @@ export class LpAnimationComponent implements OnInit {
 
   hideButton:boolean = true;
   audio = new Audio ('assets/sounds/Female_Scream_Horror-NeoPhyTe-138499973.mp3');
+  song = new Audio ('assets/sounds/song.mp3');
+  voice = new Audio ('assets/sounds/voice.mp3')
 
   constructor() { }
 
@@ -40,6 +42,10 @@ export class LpAnimationComponent implements OnInit {
   hideButtonClicked(){
     this.hideButton = false;
     this.audio.play();
+    setTimeout( () => {
+      this.song.play();
+      this.voice.play();
+    }, 6000); 
     
   }
 
