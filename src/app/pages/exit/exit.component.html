@@ -1,3 +1,4 @@
 <div class="background">
-    <button (click)= "restart()"><img src="assets/instructions/inst_end.png" class="messageEnd" width="800px" ></button>
+        <img src="assets/instructions/inst_end.png" [ngClass]=" isItTime? 'messageEnd ': 'messageEndNo' " width="800px" >
+    <button routerLink="/" (click)= "restart()">rejouer</button>
 </div>

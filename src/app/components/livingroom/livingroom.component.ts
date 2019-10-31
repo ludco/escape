@@ -14,7 +14,7 @@ export class LivingroomComponent implements OnInit {
   moviesToDisplay : Movie[] = [];
   goodAnswer : Movie[];
   moviesSelected : Movie []= [];
-  good : boolean ;
+  good : boolean =false ;
  
   
   constructor(private mansionService : MansionService, private router:Router) {}
@@ -46,14 +46,16 @@ export class LivingroomComponent implements OnInit {
         for (let i=0; i<4; i++){
           if(this.moviesSelected[i].id===this.goodAnswer[i].id){
             this.good = true;
+
           }
           else{
-            this.good = false;
+            
             
           }
         }
       }
     }
-   
+
+  
 
 }

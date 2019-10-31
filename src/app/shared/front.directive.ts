@@ -13,7 +13,7 @@ export class FrontDirective implements OnInit{
   ngOnInit(){}
 
   @HostListener('mouseenter') mouseEnterEvent (eventData : Event){
-    this.myZindex = 9;
+    this.myZindex = 2;
     this.myColor = '#1e223d';
   }
   @HostListener('mouseleave') mouseLeaveEvent (eventData : Event){
