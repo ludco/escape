@@ -1,12 +1,9 @@
-<div id="background"> 
-    
-        <img src="./assets/objectPhotos/bedroomCross.png" id="cross">
-        <img src ="./assets/objectPhotos/holyWater.png" id="holyWater">
-        <img src="./assets/objectPhotos/bedroomBible.png" id="bible">
-        <img src="./assets/objectPhotos/bedroomMaryPainting.png" id="maryPainting">
-        <img src="./assets/objectPhotos/bedroomPhotoLeft.png" id="paintingLeft">
-       
-        
-        
 
+<div id="background">
+    <img class="img" *ngFor = "let image of images" [src] ="image.url" id ="{{image.id}}" (click)="addAnswer(image)">
+    <img src="/assets/instructions/inst_bedroom.png" id = "instructions">    
+</div>
+
+
+<div *ngIf = "exitScreen === true" id="exitScreen">
 </div>

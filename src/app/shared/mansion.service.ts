@@ -5,6 +5,7 @@ import { Movie } from './movie';
 import { Items } from './item-mock';
 import { Item } from './item';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -23,6 +24,8 @@ export class MansionService {
   letterS1: boolean = false;
   letterE: boolean = false;
   
+
+  
   
   constructor(private http : HttpClient) { }
 
@@ -32,6 +35,7 @@ export class MansionService {
   getItems(): Item[] {
     return Items;
   }
+
 
   //Function random
   shuffle(array : Movie[]){
