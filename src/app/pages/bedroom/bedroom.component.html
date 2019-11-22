@@ -1,0 +1,9 @@
+
+<div id="background">
+    <img class="img" *ngFor = "let image of images" [src] ="image.url" id ="{{image.id}}" (click)="addAnswer(image)">
+    <img src="/assets/instructions/inst_bedroom.png" id = "instructions">    
+</div>
+
+
+<div *ngIf = "exitScreen === true" id="exitScreen">
+</div>
